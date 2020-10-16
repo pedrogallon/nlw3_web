@@ -25,7 +25,6 @@ function OrphanagesMap() {
   // executa esta função quando uma variavel dentro do array for alterado
   // caso tivesse uma chamada direta, seria chamada toda vez que a pag ou uma pai é atualizada
   // Isso se chama Hooks
-  console.log(orphanages);
   useEffect(() => {
     api.get("orphanages").then((response) => {
       //contem "data", onde vem o json da API
